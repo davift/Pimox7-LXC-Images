@@ -1,0 +1,138 @@
+Package: pve-web-news
+Description: News displayed on the admin interface
+  <b>Welcome</b> to the Proxmox Virtual Environment!<br><br>
+  For more information please visit our homepage at
+  <a href='https://www.proxmox.com' target='_blank'>www.proxmox.com</a>
+
+Package: alma
+Version: 9
+Type: lxc
+OS: alma-9
+Section: system
+Architecture: arm64
+Location: https://s3.dftorres.ca/dft/lxc-images/alma-9-arm64.tar.xz
+md5sum: c7a59f624eefb2a876c3faff280498e3
+sha512sum: 897d223724b4b1b7099b6cf2dc3e2e19e712e24a58b016129cc91fe90b706ab4b1e7f6cdd9301e65515493408b17d26322071a12fddd2285b3130744383e78b3
+Infopage: https://linuxcontainers.org
+Description: Alma Linux 9 ARM64
+
+Package: alpine
+Version: 3.20
+Type: lxc
+OS: alpine-3.20
+Section: system
+Architecture: arm64
+Location: https://s3.dftorres.ca/dft/lxc-images/alpine-3.20-arm64.tar.xz
+md5sum: ae262347a32b546143628f9f08d6d375
+sha512sum: b2ee3b1a766152c2cfdf7f252040f560d5b1fb6a9881817a2b78d4f404c9383c1fd0d3d2c0aa42cc27410bde21e852350e6dc64d4431110a702e52a86d90ff9f
+Infopage: https://linuxcontainers.org
+Description: Alpine 3.20 ARM64
+
+Package: alpine
+Version: edge
+Type: lxc
+OS: alpine-edge
+Section: system
+Architecture: arm64
+Location: https://s3.dftorres.ca/dft/lxc-images/alpine-edge-arm64.tar.xz
+md5sum: 65c44f5c2645da51d37faf266c243adf
+sha512sum: 8a7141237a85b9c0292dc8961dae0b8cfdef6ee42e103071f27ae4553a8aa02492cdc1cb2790bf46ff855a841afe34f367778d8fd5f76e9b9fd58c61f2c17375
+Infopage: https://linuxcontainers.org
+Description: Alpine Edge ARM64
+
+Package: arch
+Version: rolling
+Type: lxc
+OS: arch-rolling
+Section: system
+Architecture: arm64
+Location: https://s3.dftorres.ca/dft/lxc-images/arch-rolling-arm64.tar.xz
+md5sum: efe6b4d4f6f8b829eb4edd9b6b1a1bbf
+sha512sum: 759b4bae69a2e552b0ac47ecf3138c007e4c6b3f03f67275c5a8f92c09fa8db357eb31f065df286b8d76f3cbf8181e57b4025b3462960bf77a8bd6fc4180c3ae
+Infopage: https://linuxcontainers.org
+Description: Arch Rolling ARM64
+
+Package: debian
+Version: 12
+Type: lxc
+OS: debian-bookworm
+Section: system
+Architecture: arm64
+Location: https://s3.dftorres.ca/dft/lxc-images/debian-12-bookworm-arm64.tar.xz
+md5sum: b57ffb2d791c9140a4526d20efc61da6
+sha512sum: 23e4041feb49f93c30d9d9fe521e43052b09b1eefbea400941a4bf0c1eef25b390526636a73492353b5b0e8c850b7ce7f0baf5dabf187c0609d9b04328e06c83
+Infopage: https://linuxcontainers.org
+Description: Debian 12 Bookworm ARM64
+
+Package: debian
+Version: testing
+Type: lxc
+OS: debian-testing
+Section: system
+Architecture: arm64
+Location: https://s3.dftorres.ca/dft/lxc-images/debian-testing-trixie-arm64.tar.xz
+md5sum: b77321c09467f51e58bf7d990ef9e0b8
+sha512sum: e5fd73a0fbe1fbb92d33ece29af05599d559556e6c7dd248fbcab33f0356cfbacc99fedd68dfc30064090c89505aed9f674c40c40152214e8ad9b2f7e4d241fd
+Infopage: https://linuxcontainers.org
+Description: Debian Testing Trixie ARM64
+
+Package: fedora
+Version: 40
+Type: lxc
+OS: fedora-40
+Section: system
+Architecture: arm64
+Location: https://s3.dftorres.ca/dft/lxc-images/fedora-40-arm64.tar.xz
+md5sum: ada34027c121977512bdc3b317417fa2
+sha512sum: 8a0bd0ab0655327cdfa06abcebaa7d42b7a576240f97e07e7587d3afefee539132b8c1743a54700627f58455beba075a6a3c4e150aa590ea81ad5b0480b714f5
+Infopage: https://linuxcontainers.org
+Description: Fedora 40 ARM64
+
+Package: kali
+Version: 2024
+Type: lxc
+OS: kali-2024
+Section: system
+Architecture: arm64
+Location: https://s3.dftorres.ca/dft/lxc-images/kali-2024-rolling-arm64.tar.xz
+md5sum: 6b73d694be7a0c01c34032ba53b83221
+sha512sum: c875a409da621ba84b5b718f124a8aa60e464e2d958094790c083f4e127ea2a1cf81f55337a9d3623afe4cefa73eb055c62434bbe3a9f4b7cf91326909849612
+Infopage: https://linuxcontainers.org
+Description: Kali Linux 2024 ARM64
+
+Package: rocky
+Version: 9
+Type: lxc
+OS: rocky-9
+Section: system
+Architecture: arm64
+Location: https://s3.dftorres.ca/dft/lxc-images/rocky-9-arm64.tar.xz
+md5sum: 7a355b18708c829758e369cd8adda4b4
+sha512sum: 3a70fc87985506a58765d16d6100ac0d8bff26e27f17a6e16d8ae3995b02b5f78ee0fb691097e3db3e8e3730fa4dc6a9e4ab2ea2cb58cba4100b06bc92496eda
+Infopage: https://linuxcontainers.org
+Description: Rocky Linux 9 ARM64
+
+Package: ubuntu
+Version: 22.04
+Type: lxc
+OS: ubuntu-22.04
+Section: system
+Architecture: arm64
+Location: https://s3.dftorres.ca/dft/lxc-images/ubuntu-22.04-jammy-arm64.tar.xz
+md5sum: 9be49af581ff865d2a9c58f1ace11b73
+sha512sum: f7219dbb0df0492de075b92501b6f9b07da22ba43dbf67ee255795a109613665350c9cedd0e87b3b3fd9f5b4c1ba5b64fe92955f62091cfef90bffc4f1714a02
+Infopage: https://linuxcontainers.org
+Description: Ubuntu 22.04 LTS ARM64
+
+Package: ubuntu
+Version: 23.10
+Type: lxc
+OS: ubuntu-23.10
+Section: system
+Architecture: arm64
+Location: https://s3.dftorres.ca/dft/lxc-images/ubuntu-23.10-mantic-arm64.tar.xz
+md5sum: e7e9484d85d5b1690d1a4848785b1b64
+sha512sum: 6ea03f1679901a38abc71fae0393c8634565894dff05edac3089dd4271a3e02ab62e79ec800545214f35d9e13f9af79ce8683f2d2b12a2a55d4c61dde62a0fda
+Infopage: https://linuxcontainers.org
+Description: Ubuntu 23.10 ARM64
+
