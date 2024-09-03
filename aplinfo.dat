@@ -4,7 +4,7 @@ Description: News displayed on the admin interface
   For more information please visit our homepage at
   <a href='https://www.proxmox.com' target='_blank'>www.proxmox.com</a>
 
-Package: alma
+Package: alma stable
 Version: 9
 Type: lxc
 OS: alma-9
@@ -16,7 +16,7 @@ sha512sum: 897d223724b4b1b7099b6cf2dc3e2e19e712e24a58b016129cc91fe90b706ab4b1e7f
 Infopage: https://linuxcontainers.org
 Description: Alma Linux 9 ARM64
 
-Package: alpine
+Package: alpine stable
 Version: 3.20
 Type: lxc
 OS: alpine-3.20
@@ -28,7 +28,7 @@ sha512sum: b2ee3b1a766152c2cfdf7f252040f560d5b1fb6a9881817a2b78d4f404c9383c1fd0d
 Infopage: https://linuxcontainers.org
 Description: Alpine 3.20 ARM64
 
-Package: alpine
+Package: alpine stable edge
 Version: 3.21
 Type: lxc
 OS: alpine-edge
@@ -40,7 +40,7 @@ sha512sum: 8a7141237a85b9c0292dc8961dae0b8cfdef6ee42e103071f27ae4553a8aa02492cdc
 Infopage: https://linuxcontainers.org
 Description: Alpine 3.21 Edge ARM64
 
-Package: arch
+Package: arch stable
 Version: 2024
 Type: lxc
 OS: arch-rolling
@@ -52,7 +52,7 @@ sha512sum: 759b4bae69a2e552b0ac47ecf3138c007e4c6b3f03f67275c5a8f92c09fa8db357eb3
 Infopage: https://linuxcontainers.org
 Description: Arch 2024 Rolling ARM64
 
-Package: debian
+Package: debian stable
 Version: 12
 Type: lxc
 OS: debian-bookworm
@@ -64,7 +64,7 @@ sha512sum: 23e4041feb49f93c30d9d9fe521e43052b09b1eefbea400941a4bf0c1eef25b390526
 Infopage: https://linuxcontainers.org
 Description: Debian 12 Bookworm ARM64
 
-Package: debian
+Package: debian testing
 Version: 13
 Type: lxc
 OS: debian-testing
@@ -76,7 +76,7 @@ sha512sum: e5fd73a0fbe1fbb92d33ece29af05599d559556e6c7dd248fbcab33f0356cfbacc99f
 Infopage: https://linuxcontainers.org
 Description: Debian 13 Testing Trixie ARM64
 
-Package: fedora
+Package: fedora stable
 Version: 40
 Type: lxc
 OS: fedora-40
@@ -88,7 +88,7 @@ sha512sum: 8a0bd0ab0655327cdfa06abcebaa7d42b7a576240f97e07e7587d3afefee539132b8c
 Infopage: https://linuxcontainers.org
 Description: Fedora 40 ARM64
 
-Package: kali
+Package: kali stable
 Version: 2024
 Type: lxc
 OS: kali-2024
@@ -100,7 +100,7 @@ sha512sum: c875a409da621ba84b5b718f124a8aa60e464e2d958094790c083f4e127ea2a1cf81f
 Infopage: https://linuxcontainers.org
 Description: Kali Linux 2024 ARM64
 
-Package: rocky
+Package: rocky stable
 Version: 9
 Type: lxc
 OS: rocky-9
@@ -112,7 +112,7 @@ sha512sum: 3a70fc87985506a58765d16d6100ac0d8bff26e27f17a6e16d8ae3995b02b5f78ee0f
 Infopage: https://linuxcontainers.org
 Description: Rocky Linux 9 ARM64
 
-Package: ubuntu
+Package: ubuntu stable lts
 Version: 22.04
 Type: lxc
 OS: ubuntu-22.04
@@ -124,7 +124,7 @@ sha512sum: f7219dbb0df0492de075b92501b6f9b07da22ba43dbf67ee255795a109613665350c9
 Infopage: https://linuxcontainers.org
 Description: Ubuntu 22.04 LTS ARM64
 
-Package: ubuntu
+Package: ubuntu stable
 Version: 23.10
 Type: lxc
 OS: ubuntu-23.10
