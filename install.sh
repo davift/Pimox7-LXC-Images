@@ -3,13 +3,19 @@ echo ''
 echo ''
 echo ''
 
-cd /var/lib/pve-manager/apl-info
-sudo mv releases.turnkeylinux.org /root &> /dev/null
-sudo mv download.proxmox.com /root &> /dev/null
-sudo wget https://github.com/davift/pimox7-lxc-images/raw/main/aplinfo.dat -O download.proxmox.com
-sudo chmod 444 download.proxmox.com
+read -e -p "Replace/Update the LXC list od templates (y/N)? " REPLACE
 
-if [ "$1" == "--download" ]; then
+if [ "$REPLACE" == "y" ] || [ "$REPLACE" == "Y" ]; then
+    cd /var/lib/pve-manager/apl-info
+    sudo mv releases.turnkeylinux.org /root &> /dev/null
+    sudo mv download.proxmox.com /root &> /dev/null
+    sudo wget https://github.com/davift/pimox7-lxc-images/raw/main/aplinfo.dat -O download.proxmox.com
+    sudo chmod 444 download.proxmox.com
+fi
+
+read -e -p "Download the templates from linuxcontainers.org (y/N)? " DOWNLOAD
+
+if [ "$DOWNLOAD" == "y" ] || [ "$DOWNLOAD" == "Y" ]; then
     cd /var/lib/vz/template/cache/
     # Alpine
     wget -q 'https://jenkins.linuxcontainers.org/job/image-alpine/lastStableBuild/architecture=arm64,release=3.20,variant=default/artifact/rootfs.tar.xz' -O 'alpine-3.20-arm64.tar.xz'
