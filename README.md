@@ -4,7 +4,7 @@ Pimox7 out-of-the-box pulls AMD64 CT templates. This indexes and pulls ARM64 fro
 ## One-Step Automated Download
 
 ```
-wget https://raw.githubusercontent.com/davift/pimox7-lxc-images/main/install.sh && chmod +x install.sh && sudo ./install.sh 
+wget https://raw.githubusercontent.com/davift/pimox7-lxc-images/main/install.sh -O install.sh && chmod +x install.sh && sudo ./install.sh 
 ```
 
 ## Alternative Manual Download
