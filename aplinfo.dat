@@ -28,7 +28,7 @@ sha512sum: b2ee3b1a766152c2cfdf7f252040f560d5b1fb6a9881817a2b78d4f404c9383c1fd0d
 Infopage: https://linuxcontainers.org
 Description: Alpine 3.20 ARM64
 
-Package: alpine-stable-edge
+Package: alpine-edge
 Version: 3.21
 Type: lxc
 OS: alpine-edge
