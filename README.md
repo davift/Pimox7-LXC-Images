@@ -4,7 +4,7 @@ Pimox7 out-of-the-box pulls AMD64 CT templates. This indexes and pulls ARM64 fro
 ## One-Step Automated Download
 
 ```
-curl https://raw.githubusercontent.com/davift/pimox7-lxc-images/main/install.sh | sudo bash
+wget https://raw.githubusercontent.com/davift/pimox7-lxc-images/main/install.sh && chmod +x install.sh && sudo ./install.sh 
 ```
 
 ## Alternative Manual Download
@@ -15,6 +15,8 @@ Disable (hide) existent ADM64 sources:
 cd /var/lib/pve-manager/apl-info
 sudo mv releases.turnkeylinux.org /root
 sudo mv download.proxmox.com /root
+sudo wget https://github.com/davift/pimox7-lxc-images/raw/main/aplinfo.dat -O download.proxmox.com
+sudo chmod 444 download.proxmox.com
 ```
 
 Download the "Last Stable Build" templates from https://jenkins.linuxcontainers.org/
