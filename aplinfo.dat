@@ -29,7 +29,7 @@ Infopage: https://linuxcontainers.org
 Description: Alpine 3.20 ARM64
 
 Package: alpine
-Version: edge
+Version: 3.21
 Type: lxc
 OS: alpine-edge
 Section: system
@@ -38,10 +38,10 @@ Location: https://s3.dftorres.ca/dft/lxc-images/alpine-edge-arm64.tar.xz
 md5sum: 65c44f5c2645da51d37faf266c243adf
 sha512sum: 8a7141237a85b9c0292dc8961dae0b8cfdef6ee42e103071f27ae4553a8aa02492cdc1cb2790bf46ff855a841afe34f367778d8fd5f76e9b9fd58c61f2c17375
 Infopage: https://linuxcontainers.org
-Description: Alpine Edge ARM64
+Description: Alpine 3.21 Edge ARM64
 
 Package: arch
-Version: rolling
+Version: 2024
 Type: lxc
 OS: arch-rolling
 Section: system
@@ -50,7 +50,7 @@ Location: https://s3.dftorres.ca/dft/lxc-images/arch-rolling-arm64.tar.xz
 md5sum: efe6b4d4f6f8b829eb4edd9b6b1a1bbf
 sha512sum: 759b4bae69a2e552b0ac47ecf3138c007e4c6b3f03f67275c5a8f92c09fa8db357eb31f065df286b8d76f3cbf8181e57b4025b3462960bf77a8bd6fc4180c3ae
 Infopage: https://linuxcontainers.org
-Description: Arch Rolling ARM64
+Description: Arch 2024 Rolling ARM64
 
 Package: debian
 Version: 12
@@ -65,7 +65,7 @@ Infopage: https://linuxcontainers.org
 Description: Debian 12 Bookworm ARM64
 
 Package: debian
-Version: testing
+Version: 13
 Type: lxc
 OS: debian-testing
 Section: system
@@ -74,7 +74,7 @@ Location: https://s3.dftorres.ca/dft/lxc-images/debian-testing-trixie-arm64.tar.
 md5sum: b77321c09467f51e58bf7d990ef9e0b8
 sha512sum: e5fd73a0fbe1fbb92d33ece29af05599d559556e6c7dd248fbcab33f0356cfbacc99fedd68dfc30064090c89505aed9f674c40c40152214e8ad9b2f7e4d241fd
 Infopage: https://linuxcontainers.org
-Description: Debian Testing Trixie ARM64
+Description: Debian 13 Testing Trixie ARM64
 
 Package: fedora
 Version: 40
