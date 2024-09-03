@@ -3,9 +3,9 @@ echo ''
 echo ''
 echo ''
 
-cd /var/lib/pve-manager/apl-info
-sudo mv releases.turnkeylinux.org /root 
-sudo mv download.proxmox.com /root
+#cd /var/lib/pve-manager/apl-info
+#sudo mv releases.turnkeylinux.org /root &> /dev/null
+#sudo mv download.proxmox.com /root &> /dev/null
 
 cd /var/lib/vz/template/cache/
 # Alpine
