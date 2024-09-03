@@ -100,6 +100,30 @@ sha512sum: c875a409da621ba84b5b718f124a8aa60e464e2d958094790c083f4e127ea2a1cf81f
 Infopage: https://linuxcontainers.org
 Description: Kali Linux 2024 ARM64
 
+Package: kali-cli
+Version: 2024
+Type: lxc
+OS: kali-2024
+Section: custom-system
+Architecture: arm64
+Location: https://s3.dftorres.ca/dft/lxc-images/kali-cli.tar.gz
+md5sum: e9514f78460bb66c9c5486627ae0f4d7
+sha512sum: 327f04e9eb4bdc711a1a9794cb0b67d1c7cdea6c23bc3809d9a97c74f142b7d3126d846757e037642bbf4dc49f25f2de7affc45a0711b103dd1cb5dd6b09bdde
+Infopage: https://linuxcontainers.org
+Description: Kali Linux 2024 ARM64 - Custom build (not official)
+
+Package: kali-desk-xrdp
+Version: 2024
+Type: lxc
+OS: kali-2024
+Section: custom-system
+Architecture: arm64
+Location: https://s3.dftorres.ca/dft/lxc-images/kali-desk-xrdp.tar.gz
+md5sum: 531a216f33d3a7559e0a69cc84a4f73d
+sha512sum: 5627bc159f7cb96d1678df60c3b4cc7f42be120e8fdb0087d47ce97a920907406d472bf9736c5c315a5f40e883b8384a426a4b9e08f993874e34ec18ac1f74a0
+Infopage: https://linuxcontainers.org
+Description: Kali Linux 2024 ARM64 Desktop with XRDP - Custom build (not official)
+
 Package: rocky-stable
 Version: 9
 Type: lxc
