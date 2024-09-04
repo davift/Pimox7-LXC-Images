@@ -44,4 +44,23 @@ wget -q 'https://jenkins.linuxcontainers.org/view/Images/job/image-archlinux/arc
 wget -q 'https://jenkins.linuxcontainers.org/view/Images/job/image-rockylinux/lastStableBuild/architecture=arm64,release=9,variant=default/artifact/rootfs.tar.xz' -O 'rocky-9-arm64.tar.xz'
 ```
 
-### Checkout https://jenkins.linuxcontainers.org/view/Images/ for more templates.
+Download the custom image templates
+
+```
+cd /var/lib/vz/template/cache/
+# Kali Cli - Custom build (not official)
+wget -q 'https://s3.dftorres.ca/dft/lxc-images/kali-cli.tar.gz' -O 'kali-cli.tar.gz'
+# Kali Desktop with XRDP - Custom build (not official)
+wget -q 'https://s3.dftorres.ca/dft/lxc-images/kali-desk-xrdp.tar.gz' -O 'kali-desk-xrdp.tar.gz'
+# Tor Gateway - A gateway that tunnels all system traffic through Tor.
+wget -q 'https://s3.dftorres.ca/dft/lxc-images/tor-gateway.tar.gz' -O 'tor-gateway.tar.gz'
+```
+
+## More Information
+
+- TorGateway / TorTunnel
+  - https://dft.wiki/?p=4377
+  - https://github.com/davift/TorTunnel
+- Kali Cli / Desktop
+  - https://dft.wiki/?p=3430
+
