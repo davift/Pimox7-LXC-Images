@@ -38,6 +38,18 @@ if [ "$DOWNLOAD" == "y" ] || [ "$DOWNLOAD" == "Y" ]; then
     wget -q 'https://jenkins.linuxcontainers.org/view/Images/job/image-rockylinux/lastStableBuild/architecture=arm64,release=9,variant=default/artifact/rootfs.tar.xz' -O 'rocky-9-arm64.tar.xz'
 fi
 
+read -e -p "Download custom templates (y/N)? " DOWNLOAD
+
+if [ "$DOWNLOAD" == "y" ] || [ "$DOWNLOAD" == "Y" ]; then
+    cd /var/lib/vz/template/cache/
+    # Kali Cli
+    wget -q 'https://s3.dftorres.ca/dft/lxc-images/kali-cli.tar.gz' -O 'kali-cli.tar.gz'
+    # Kali Desktop with XRDP
+    wget -q 'https://s3.dftorres.ca/dft/lxc-images/kali-desk-xrdp.tar.gz' -O 'kali-desk-xrdp.tar.gz'
+    # Tor Gateway
+    wget -q 'https://s3.dftorres.ca/dft/lxc-images/tor-gateway.tar.gz' -O 'tor-gateway.tar.gz'
+fi
+
 echo ''
 echo 'Completed'
 echo ''
