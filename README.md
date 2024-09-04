@@ -1,11 +1,36 @@
 # pimox7-lxc-images
-Pimox7 out-of-the-box pulls AMD64 CT templates. This indexes and pulls ARM64 from jenkins.linuxcontainers.org.
+Pimox7 out-of-the-box pulls incompatible (AMD64) CT templates. This app indexes and pulls ARM64 from linuxcontainers.org and custom.
 
 ## One-Step Automated Download
 
 ```
 wget https://raw.githubusercontent.com/davift/pimox7-lxc-images/main/install.sh -O install.sh && chmod +x install.sh && sudo ./install.sh 
 ```
+
+## What are the Custom Images for?
+
+- Kali CLI
+  - All the look and feel of the Kali command prompt plus all the basic tools.
+
+![Kali CLI](https://github.com/davift/pimox7-lxc-images/blob/main/kali-cli.png)
+
+- Kali Desktop with XRDP
+  - After creating and stating a CT with this image, use any RDP client to connect to a fully-fledged Virtual Desktop experience.
+
+![Kali Desktop XRDP](https://github.com/davift/pimox7-lxc-images/blob/main/kali-desktop-xrdp.png)
+
+- Tor Gateway
+  - This appliance works as a gateway to route (tunnel) all traffic through the Tor Network.
+    - The first network adapter eth0 on vmbr0 (Internet) with DHCP
+    - Create a secondary adapter eth1 on the vmbr2 (isolated network) with  the IP 10.10.10.1.
+    - All inbound traffic on eth1 will be served via Tor.
+  - Any other CT that is connected to vmbr2 needs the following network configuration.
+    - IPv4 10.10.10.2/24 to 10.10.10.254/24
+    - Gateway 10.10.10.1.
+
+![Tor Gateway Server](https://github.com/davift/pimox7-lxc-images/blob/main/tor-gateway-1.png)
+
+![Tor Gateway Clientn](https://github.com/davift/pimox7-lxc-images/blob/main/tor-gateway-2.png)
 
 ## Alternative Manual Download
 
@@ -19,7 +44,7 @@ sudo wget https://github.com/davift/pimox7-lxc-images/raw/main/aplinfo.dat -O do
 sudo chmod 444 download.proxmox.com
 ```
 
-Download the "Last Stable Build" templates from https://jenkins.linuxcontainers.org/
+Download the "Last Stable Build" templates from linuxcontainers.org
 
 ```
 cd /var/lib/vz/template/cache/
@@ -63,4 +88,3 @@ wget -q 'https://s3.dftorres.ca/dft/lxc-images/tor-gateway.tar.gz' -O 'tor-gatew
   - https://github.com/davift/TorTunnel
 - Kali Cli / Desktop
   - https://dft.wiki/?p=3430
-
