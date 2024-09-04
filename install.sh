@@ -3,7 +3,7 @@ echo ''
 echo ''
 echo ''
 
-read -e -p "Replace/Update the LXC list od templates (y/N)? " REPLACE
+read -e -p "Replace/Update the LXC list of templates (y/N)? " REPLACE
 
 if [ "$REPLACE" == "y" ] || [ "$REPLACE" == "Y" ]; then
     cd /var/lib/pve-manager/apl-info
