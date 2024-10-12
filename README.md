@@ -74,11 +74,11 @@ Download the custom image templates
 ```
 cd /var/lib/vz/template/cache/
 # Kali Cli - Custom build (not official)
-wget -q 'https://s3.dft.wiki/dft/lxc-images/kali-cli.tar.gz' -O 'kali-cli.tar.gz'
+wget -q 'https://r2.dft.wiki/dft/lxc-images/kali-cli.tar.gz' -O 'kali-cli.tar.gz'
 # Kali Desktop with XRDP - Custom build (not official)
-wget -q 'https://s3.dft.wiki/dft/lxc-images/kali-desk-xrdp.tar.gz' -O 'kali-desk-xrdp.tar.gz'
+wget -q 'https://r2.dft.wiki/dft/lxc-images/kali-desk-xrdp.tar.gz' -O 'kali-desk-xrdp.tar.gz'
 # Tor Gateway - A gateway that tunnels all system traffic through Tor.
-wget -q 'https://s3.dft.wiki/dft/lxc-images/tor-gateway.tar.gz' -O 'tor-gateway.tar.gz'
+wget -q 'https://r2.dft.wiki/dft/lxc-images/tor-gateway.tar.gz' -O 'tor-gateway.tar.gz'
 ```
 
 ## More Information
